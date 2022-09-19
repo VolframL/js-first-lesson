@@ -1,9 +1,7 @@
-  const data = [5, 10, 'Shopping', 20, 'Homework'];
-  const result = [];
+function foo () {
+  console.log("object");
+  let num = 40;
+  return num;
+}
 
-  
-  // Пишем решение вот тут
-  for (let i = data.length-1; i >= 0; i--) {
-    result.push(data[i]);
-  }
-  console.log(result);
+console.log(foo());
