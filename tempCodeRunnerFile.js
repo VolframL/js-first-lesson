@@ -1,7 +1,1 @@
-function foo () {
-  console.log("object");
-  let num = 40;
-  return num;
-}
-
-console.log(foo());
+console.log(Number.MAX_VALUE+1);
