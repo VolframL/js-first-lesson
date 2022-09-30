@@ -306,3 +306,71 @@
 // newQ.three.five = 'five';
 // console.log(q);
 // console.log(newQ);
+
+// const shoppingMallData = {
+//   shops: [
+//     {
+//       width: 10,
+//       length: 5,
+//     },
+//     {
+//       width: 15,
+//       length: 7,
+//     },
+//     {
+//       width: 20,
+//       length: 5,
+//     },
+//     {
+//       width: 8,
+//       length: 10,
+//     },
+//   ],
+//   height: 5,
+//   moneyPer1m3: 30,
+//   budget: 50000,
+// };
+
+// function isBudgetEnough(data) {
+//   let {shops, height, moneyPer1m3, budget} = data;
+//   let area = 0;
+//     for (const shop of shops) {
+//       area += shop.width * shop.length;
+//     }
+
+//   let volume = area * height;
+
+//   if (budget >= moneyPer1m3 * volume) {
+//     return 'Бюджета достаточно';
+//   } else {
+//     return 'Бюджета недостаточно';
+//   }
+// }
+
+// console.log(isBudgetEnough(shoppingMallData));
+
+// const students = ['Peter', 'Ann', 'Josh', 'zWsnssn', 'Sandra', 'Cris', 'Bernard', 'Takesi', 'Sam'];
+
+// function sortStudentsByGroups(arr) {
+//   let newArr = arr.map((item) => item.toLowerCase()).sort();
+//   newArr = newArr.map((item) => item.replace(item.charAt(0), item.charAt(0).toUpperCase()));
+//   let str = newArr.toString();
+//   let array = [];
+//   for (let i = 0; i < 3; i++) {
+//     array[i] = new Array(3);
+//     for (let j = 0; j < 3; j++) {
+//       array[i][j] = newArr.shift();
+//     }
+//   }
+//   if (newArr.length === 0) {
+//     array.push('Оставшиеся студенты: -');
+//   } else if (newArr.length === 1) {
+//     array.push(`Оставшиеся студенты: ${newArr}`);
+//   } else {
+//     array.push(`Оставшиеся студенты: ${newArr[0]}, ${newArr[1]}`);
+//   }
+
+//   return array;
+// }
+
+// console.log(sortStudentsByGroups(students));
