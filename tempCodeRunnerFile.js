@@ -1,19 +1,19 @@
-function fib(num) {
-  if (Number.isInteger(num)) {
-  let str = '';
-  let arr = [0, 1];
-  for (let i = 0; i < num; i++) {
-    arr.push(arr[i] + arr[i + 1]);
-    str += arr[i];
-    if (i < num-1){
-      str += ' ';
+const baseCurrencies = ['USD', 'EUR'];
+const additionalCurrencies = ['UAH', 'RUB', 'CNY'];
+
+function availableCurr(arr, missingCurr) {
+
+  if (arr.length === 0) {
+    return 'Нет доступных валют.';
+  } else {
+    let money = [...baseCurrencies, ...additionalCurrencies];
+    let str = `Доступные валюты:\n`;
+    for (let item of money) {
+      if (item !== missingCurr) {
+        str += `${item}\n`;
       }
     }
     return str;
-  } else {
-    return '';
   }
-
 }
-
-console.log(fib(5));
+console.log(availableCurr([], 'CNY'));
