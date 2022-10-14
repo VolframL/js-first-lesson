@@ -374,3 +374,78 @@
 // }
 
 // console.log(sortStudentsByGroups(students));
+
+// function createCounter() {
+//   let counter = 0;
+
+//   const myFunction = function () {
+//     counter = counter + 1;
+//     return counter;
+//   };
+
+//   return myFunction;
+// }
+
+// const increment = createCounter();
+// const c1 = increment();
+// const c2 = increment();
+// const c3 = increment();
+
+// console.log(c1, c2, c3);
+
+// let c = 4;
+// function addX(x) {
+//   return function (n) {
+//     return n + x;
+//   };
+// }
+// const addThree = addX(3);
+// let d = addThree(c);
+
+// console.log('example partial application', d);
+// d = addThree(c);
+// console.log('example partial application', d);
+
+// const result = getSum(5, 6);
+// const getSum = function(a, b) {
+//     return a + b;
+// }
+
+// console.log(result)
+
+// console.log('object'.slice(5));
+
+// Какое будет выведено значение: let x = 5; alert( x++ ); ?
+//  Чему равно такое выражение: [ ] + false - null + true ?
+//  Что выведет этот код: let y = 1; let x = y = 2; alert(x); ?
+//  Чему равна сумма [ ] + 1 + 2?
+//  Что выведет этот код: alert( &quot;1&quot;[0] )?
+//  Чему равно 2 &amp;&amp; 1 &amp;&amp; null &amp;&amp; 0 &amp;&amp; undefined ?
+//  Есть ли разница между выражениями? !!( a &amp;&amp; b ) и (a &amp;&amp; b)?
+//  Что выведет этот код: alert( null || 2 &amp;&amp; 3 || 4 ); ?
+//  a = [1, 2, 3]; b = [1, 2, 3]; Правда ли что a == b ?
+//  Что выведет этот код: alert( +&quot;Infinity&quot; ); ?
+//  Верно ли сравнение: &quot;Ёжик&quot; &gt; &quot;яблоко&quot;?
+//  Чему равно 0 || &quot;&quot; || 2 || undefined || true || falsе ?
+
+// console.log('oros'[0]);
+
+// for (var i = 0; i < 10; i++) {
+//   (function (i) {
+//   setTimeout(function () {
+//       console.log(i);
+//   }, 100);
+// })(i);
+// }
+
+// for (var i = 0; i<10;i++){
+//   setTimeout(function (i){
+//     console.log(i);
+//   }, 100, i);
+// }
+
+// function func(){
+//   console.log('object');
+// }
+
+// setInterval(func, 500);
